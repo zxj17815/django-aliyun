@@ -1,0 +1,7 @@
+aliyun/uwsgi/uwsgi.log
+aliyun/uwsgi/uwsgi.pid
+aliyun/uwsgi/uwsgi.status
+*.pyc
+.vscode
+collected_static
+sing-app
