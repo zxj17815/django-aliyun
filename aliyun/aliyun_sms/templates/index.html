@@ -33,14 +33,14 @@
             <!-- need this .js class to initiate slimscroll -->
             <div class="js-sidebar-content">
                 <header class="logo d-none d-md-block">
-                    <a href="{% static "sing/https://demo.flatlogic.com/sing-app/" %}" ><span class="text-warning">sing</span> app</a>
+                    <a href="https://demo.flatlogic.com/sing-app/" ><span class="text-warning">sing</span> app</a>
                 </header>
                 <!-- seems like lots of recent admin template have this feature of user info in the sidebar.
                      looks good, so adding it and enhancing with notifications -->
                 <div class="sidebar-status d-md-none">
-                    <a href="{% static "sing/#" %}"  class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="thumb-sm avatar float-right">
-                            <img class="rounded-circle" src="demo/img/people/a5.jpg" alt="...">
+                            <img class="rounded-circle" src="{% static "sing/demo/img/people/a5.jpg" %}" alt="...">
                         </span>
                         <!-- .circle is a pretty cool way to add a bit of beauty to raw data.
                              should be used with bg-* and text-* classes for colors -->
@@ -57,7 +57,7 @@
                 <ul class="sidebar-nav">
                     <li class=" active ">
                         <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a href="{% static "sing/index.html" %}" >
+                        <a href="index.html" >
                             <span class="icon">
                                 <i class="fi flaticon-home"></i>
                             </span>
@@ -66,11 +66,11 @@
                     </li>
                 </ul>
                 <!-- every .sidebar-nav may have a title -->
-                <h5 class="sidebar-nav-title">Template <a class="action-link" href="{% static "sing/#" %}" ><i class="glyphicon glyphicon-refresh"></i></a></h5>
+                <h5 class="sidebar-nav-title">Template <a class="action-link" href="#" ><i class="glyphicon glyphicon-refresh"></i></a></h5>
                 <ul class="sidebar-nav">
                     <li class="">
                         <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a href="{% static "sing/typography.html" %}" >
+                        <a href="typography.html" >
                             <span class="icon">
                                 <i class="fi flaticon-controls"></i>
                             </span>
@@ -214,7 +214,7 @@
                                         aria-expanded="false"
                                 >
                                     <span class="thumb-sm avatar float-left">
-                                        <img class="rounded-circle" src="demo/img/people/a5.jpg" alt="...">
+                                        <img class="rounded-circle" src="{% static "sing/demo/img/people/a5.jpg" %}" alt="...">
                                     </span>
                                     &nbsp;
                                     Philip <strong>Smith</strong>&nbsp;
@@ -260,17 +260,17 @@
                                         <div id="notifications-list" class="list-group thin-scroll">
                                             <div class="list-group-item">
                                             <span class="thumb-sm float-left mr clearfix">
-                                                <img class="rounded-circle" src="demo/img/people/a3.jpg" alt="...">
+                                                <img class="rounded-circle" src="{% static "sing/demo/img/people/a3.jpg" %}" alt="...">
                                             </span>
                                                 <p class="no-margin overflow-hidden">
                                                     1 new user just signed up! Check out
-                                                    <a href="{% static "sing/#">Monica Smith</a>'s account.
+                                                    <a href="#">Monica Smith</a>'s account.
                                                     <time class="help-block no-margin">
                                                         2 mins ago
                                                     </time>
                                                 </p>
                                             </div>
-                                            <a class="list-group-item" href="{% static "sing/#">
+                                            <a class="list-group-item" href="#">
                                             <span class="thumb-sm float-left mr">
                                                 <i class="glyphicon glyphicon-upload fa-lg"></i>
                                             </span>
@@ -280,7 +280,7 @@
                                                     5h ago
                                                 </time>
                                             </a>
-                                            <a class="list-group-item" href="{% static "sing/#">
+                                            <a class="list-group-item" href="{#">
                                             <span class="thumb-sm float-left mr">
                                                 <i class="fa fa-bolt fa-lg"></i>
                                             </span>
@@ -292,10 +292,10 @@
                                             </a>
                                             <div class="list-group-item">
                                             <span class="thumb-sm float-left mr clearfix">
-                                                <img class="rounded-circle" src="demo/img/people/a5.jpg" alt="...">
+                                                <img class="rounded-circle" src="{% static "sing/demo/img/people/a5.jpg" %}" alt="...">
                                             </span>
                                                 <p class="no-margin overflow-hidden">
-                                                    User <a href="{% static "sing/#">Jeff</a> registered
+                                                    User <a href="#">Jeff</a> registered
                                                     &nbsp;&nbsp;
                                                     <button class="btn btn-xs btn-success">Allow</button>
                                                     <button class="btn btn-xs btn-danger">Deny</button>
@@ -310,13 +310,13 @@
                                                 </span>
                                                 <p class="no-margin overflow-hidden">
                                                     Instructions for changing your Envato Account password. Please
-                                                    check your account <a href="{% static "sing/#">security page</a>.
+                                                    check your account <a href="#">security page</a>.
                                                     <time class="help-block no-margin">
                                                         12:18 AM
                                                     </time>
                                                 </p>
                                             </div>
-                                            <a class="list-group-item" href="{% static "sing/#" %}" >
+                                            <a class="list-group-item" href="#" >
                                             <span class="thumb-sm float-left mr">
                                                 <span class="square bg-primary square-lg">
                                                     <i class="fa fa-facebook text-white"></i>
@@ -385,19 +385,19 @@
                     </header>
                     <div class="widget-body mt-3">
                         <div class="mt-4">
-                            <a href="{% static "sing/https://wrapbootstrap.com/theme/sing-app-html5-angular-react-admin-WB0J6BJ85" %}" 
+                            <a href="https://wrapbootstrap.com/theme/sing-app-html5-angular-react-admin-WB0J6BJ85"
                                target="_blank"
                                role="button"
                                class="btn btn-warning btn-rounded-f btn-block fs-mini text-white">
                                 Purchase
                             </a>
-                            <a href="{% static "sing/http://demo.flatlogic.com/sing-app/html-bs4/" %}" 
+                            <a href="http://demo.flatlogic.com/sing-app/html-bs4/"
                                target="_blank"
                                role="button"
                                class="btn btn-danger btn-rounded-f btn-block fs-mini">
                                 Go FULL Version
                             </a>
-                            <a href="{% static "sing/http://demo.flatlogic.com/sing-app/documentation/" %}" 
+                            <a href="http://demo.flatlogic.com/sing-app/documentation/"
                                target="_blank"
                                role="button"
                                class="btn btn-secondary btn-rounded-f btn-block fs-mini">
@@ -407,14 +407,14 @@
                         <div class="d-flex justify-content-between mt-lg">
                             <a role="button"
                                target="_blank"
-                               href="{% static "sing/https://flatlogic.com/contact" %}" 
+                               href="https://flatlogic.com/contact"
                                class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
                                 <i class="glyphicon glyphicon-headphones mr-xs"></i>
                                 Support
                             </a>
                             <a role="button"
                                target="_blank"
-                               href="{% static "sing/https://github.com/flatlogic/sing-app" %}" 
+                               href="https://github.com/flatlogic/sing-app" 
                                class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
                                 <i class="fa fa-github mr-xs"></i>
                                 Github
@@ -426,10 +426,10 @@
                             </span>
                             <div class="d-flex justify-content-center text-light mt-2">
                                 <a target="_blank"
-                                   href="{% static "sing/https://twitter.com/intent/tweet?text=Admin%20dashboard%20template%20built%20with%20NodeJS,%20React%20and%20Bootstrap%204!&url=https://demo.flatlogic.com/sing-app/html-bs4/&via=flatlogic" %}" >
+                                   href="https://twitter.com/intent/tweet?text=Admin%20dashboard%20template%20built%20with%20NodeJS,%20React%20and%20Bootstrap%204!&url=https://demo.flatlogic.com/sing-app/html-bs4/&via=flatlogic" >
                                     <i class="fa fa-twitter pr-1"></i>
                                 </a>
-                                <a href="{% static "sing/https://www.facebook.com/sharer/sharer.php?u=https://demo.flatlogic.com/sing-app/html-bs4/" %}" 
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://demo.flatlogic.com/sing-app/html-bs4/" 
                                    target="_blank">
                                     <i class="fa fa-facebook pl-1"></i>
                                 </a>
@@ -862,16 +862,16 @@
         </div>
 
         <!-- common libraries. required for every page-->
-        <script src="{% static "/bower_components/jquery/dist/jquery.min.js" %}"></script>
-        <script src="{% static "/bower_components/jquery-pjax/jquery.pjax.js" %}"></script>
-        <script src="{% static "/bower_components/popper.js/dist/umd/popper.js" %}"></script>
-        <script src="{% static "/bower_components/bootstrap/dist/js/bootstrap.js" %}"></script>
-        <script src="{% static "/bower_components/bootstrap/js/dist/util.js" %}"></script>
-        <script src="{% static "/bower_components/slimScroll/jquery.slimscroll.js" %}"></script>
-        <script src="{% static "/bower_components/widgster/widgster.js" %}"></script>
-        <script src="{% static "/bower_components/pace.js/pace.js" %}" data-pace-options='{ "target": ".content-wrap", "ghostTime": 1000 }'></script>
-        <script src="{% static "/bower_components/hammerjs/hammer.js" %}"></script>
-        <script src="{% static "/bower_components/jquery-hammerjs/jquery.hammer.js" %}"></script>
+        <script src="{% static "bower_components/jquery/dist/jquery.min.js" %}"></script>
+        <script src="{% static "bower_components/jquery-pjax/jquery.pjax.js" %}"></script>
+        <script src="{% static "bower_components/popper.js/dist/umd/popper.js" %}"></script>
+        <script src="{% static "bower_components/bootstrap/dist/js/bootstrap.js" %}"></script>
+        <script src="{% static "bower_components/bootstrap/js/dist/util.js" %}"></script>
+        <script src="{% static "bower_components/slimScroll/jquery.slimscroll.js" %}"></script>
+        <script src="{% static "bower_components/widgster/widgster.js" %}"></script>
+        <script src="{% static "bower_components/pace.js/pace.js" %}" data-pace-options='{ "target": ".content-wrap", "ghostTime": 1000 }'></script>
+        <script src="{% static "bower_components/hammerjs/hammer.js" %}"></script>
+        <script src="{% static "bower_components/jquery-hammerjs/jquery.hammer.js" %}"></script>
 
 
         <!-- common app js -->
@@ -879,19 +879,19 @@
         <script src="{% static "sing/js/app.js" %}"></script>
 
         <!-- Page scripts -->
-        <script src="{% static "/bower_components/flot.animator/jquery.flot.animator.min.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.js" %}"></script>
-        <script src="{% static "/bower_components/flot-orderBars/js/jquery.flot.orderBars.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.selection.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.time.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.pie.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.stack.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.crosshair.js" %}"></script>
-        <script src="{% static "/bower_components/flot/jquery.flot.symbol.js" %}"></script>
-        <script src="{% static "/bower_components/flot.dashes/jquery.flot.dashes.js" %}"></script>
-        <script src="{% static "/bower_components/jquery.sparkline/index.js" %}"></script>
-        <script src="{% static "/bower_components/bootstrap_calendar/bootstrap_calendar/js/bootstrap_calendar.min.js" %}"></script>
-        <script src="{% static "/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js" %}"></script>
+        <script src="{% static "bower_components/flot.animator/jquery.flot.animator.min.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.js" %}"></script>
+        <script src="{% static "bower_components/flot-orderBars/js/jquery.flot.orderBars.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.selection.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.time.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.pie.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.stack.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.crosshair.js" %}"></script>
+        <script src="{% static "bower_components/flot/jquery.flot.symbol.js" %}"></script>
+        <script src="{% static "bower_components/flot.dashes/jquery.flot.dashes.js" %}"></script>
+        <script src="{% static "bower_components/jquery.sparkline/index.js" %}"></script>
+        <script src="{% static "bower_components/bootstrap_calendar/bootstrap_calendar/js/bootstrap_calendar.min.js" %}"></script>
+        <script src="{% static "bower_components/bootstrap-select/dist/js/bootstrap-select.min.js" %}"></script>
 
         <!-- page specific js -->
         <script src="{% static "sing/js/index.js" %}"></script>

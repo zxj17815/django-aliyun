@@ -1,13 +1,14 @@
+{% load i18n static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Sing App - Tables</title>
-        <link href="css/application.css" rel="stylesheet">
+        <link href="{% static "sing/css/application.css" %}" rel="stylesheet">
         <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
         <!--[if IE 9]>
         <link href="css/application-ie9-part2.css" rel="stylesheet">
         <![endif]-->
-        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="shortcut icon" href="{% static "sing/img/favicon.png" %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="description" content="Sing App - Bootstrap 4 Admin Dashboard Template">
         <meta name="keywords" content="admin,dashboard,bootstrap,template,react,angular,vue,html,css,javascript">
@@ -39,7 +40,7 @@
                 <div class="sidebar-status d-md-none">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="thumb-sm avatar float-right">
-                            <img class="rounded-circle" src="demo/img/people/a5.jpg" alt="...">
+                            <img class="rounded-circle" src="{% static "sing/demo/img/people/a5.jpg" %}" alt="...">
                         </span>
                         <!-- .circle is a pretty cool way to add a bit of beauty to raw data.
                              should be used with bg-* and text-* classes for colors -->
@@ -213,7 +214,7 @@
                                         aria-expanded="false"
                                 >
                                     <span class="thumb-sm avatar float-left">
-                                        <img class="rounded-circle" src="demo/img/people/a5.jpg" alt="...">
+                                        <img class="rounded-circle" src="{% static "sing/demo/img/people/a5.jpg" %}" alt="...">
                                     </span>
                                     &nbsp;
                                     Philip <strong>Smith</strong>&nbsp;
@@ -259,7 +260,7 @@
                                         <div id="notifications-list" class="list-group thin-scroll">
                                             <div class="list-group-item">
                                             <span class="thumb-sm float-left mr clearfix">
-                                                <img class="rounded-circle" src="demo/img/people/a3.jpg" alt="...">
+                                                <img class="rounded-circle" src="{% static "sing/demo/img/people/a3.jpg" %}" alt="...">
                                             </span>
                                                 <p class="no-margin overflow-hidden">
                                                     1 new user just signed up! Check out
@@ -291,7 +292,7 @@
                                             </a>
                                             <div class="list-group-item">
                                             <span class="thumb-sm float-left mr clearfix">
-                                                <img class="rounded-circle" src="demo/img/people/a5.jpg" alt="...">
+                                                <img class="rounded-circle" src="{% static "sing/demo/img/people/a5.jpg" %}" alt="...">
                                             </span>
                                                 <p class="no-margin overflow-hidden">
                                                     User <a href="#">Jeff</a> registered
@@ -476,7 +477,7 @@
                             <tr>
                                 <td class="d-none d-md-table-cell">1</td>
                                 <td>
-                                    <img class="img-rounded" src="demo/img/pictures/1.jpg" alt="" height="50">
+                                    <img class="img-rounded" src="{% static "sing/demo/img/pictures/1.jpg" %}" alt="" height="50">
                                 </td>
                                 <td>
                                     Palo Alto
@@ -510,7 +511,7 @@
                             <tr>
                                 <td class="d-none d-md-table-cell">2</td>
                                 <td>
-                                    <img class="img-rounded" src="demo/img/pictures/2.jpg" alt="" height="50">
+                                    <img class="img-rounded" src="{% static "sing/demo/img/pictures/2.jpg" %}" alt="" height="50">
                                 </td>
                                 <td>
                                     The Sky
@@ -544,7 +545,7 @@
                             <tr>
                                 <td class="d-none d-md-table-cell">3</td>
                                 <td>
-                                    <img class="img-rounded" src="demo/img/pictures/3.jpg" alt="" height="50">
+                                    <img class="img-rounded" src="{% static "sing/demo/img/pictures/3.jpg" %}" alt="" height="50">
                                 </td>
                                 <td>
                                     Down the road
@@ -580,7 +581,7 @@
                             <tr>
                                 <td class="d-none d-md-table-cell">4</td>
                                 <td>
-                                    <img class="img-rounded" src="demo/img/pictures/4.jpg" alt="" height="50">
+                                    <img class="img-rounded" src="{% static "sing/demo/img/pictures/4.jpg" %}" alt="" height="50">
                                 </td>
                                 <td>
                                     The Edge
@@ -614,7 +615,7 @@
                             <tr>
                                 <td class="d-none d-md-table-cell">5</td>
                                 <td>
-                                    <img class="img-rounded" src="demo/img/pictures/11.jpg" alt="" height="50">
+                                    <img class="img-rounded" src="{% static "sing/demo/img/pictures/11.jpg" %}" alt="" height="50">
                                 </td>
                                 <td>
                                     Fortress
@@ -998,25 +999,24 @@
         </div>
 
         <!-- common libraries. required for every page-->
-        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../bower_components/jquery-pjax/jquery.pjax.js"></script>
-        <script src="../bower_components/popper.js/dist/umd/popper.js"></script>
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="../bower_components/bootstrap/js/dist/util.js"></script>
-        <script src="../bower_components/slimScroll/jquery.slimscroll.js"></script>
-        <script src="../bower_components/widgster/widgster.js"></script>
-        <script src="../bower_components/pace.js/pace.js" data-pace-options='{ "target": ".content-wrap", "ghostTime": 1000 }'></script>
-        <script src="../bower_components/hammerjs/hammer.js"></script>
-        <script src="../bower_components/jquery-hammerjs/jquery.hammer.js"></script>
+        <script src="{% static "bower_components/jquery/dist/jquery.min.js" %}"></script>
+        <script src="{% static "bower_components/popper.js/dist/umd/popper.js" %}"></script>
+        <script src="{% static "bower_components/bootstrap/dist/js/bootstrap.js" %}"></script>
+        <script src="{% static "bower_components/bootstrap/js/dist/util.js" %}"></script>
+        <script src="{% static "bower_components/slimScroll/jquery.slimscroll.js" %}"></script>
+        <script src="{% static "bower_components/widgster/widgster.js" %}"></script>
+        <script src="{% static "bower_components/pace.js/pace.js" %}" data-pace-options='{ "target": ".content-wrap", "ghostTime": 1000 }'></script>
+        <script src="{% static "bower_components/hammerjs/hammer.js" %}"></script>
+        <script src="{% static "bower_components/jquery-hammerjs/jquery.hammer.js" %}"></script>
 
 
         <!-- common app js -->
-        <script src="js/settings.js"></script>
-        <script src="js/app.js"></script>
+        <script src="{% static "sing/js/settings.js" %}"></script>
+        <script src="{% static "sing/js/app.js" %}"></script>
 
         <!-- Page scripts -->
-        <script src="../bower_components/jquery.sparkline/index.js"></script>
+        <script src="{% static "bower_components/jquery.sparkline/index.js" %}"></script>
         <!-- page specific js -->
-        <script src="js/tables.js"></script>
+        <script src="{% static "sing/js/tables.js" %}"></script>
     </body>
 </html>

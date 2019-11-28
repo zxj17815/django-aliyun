@@ -3,21 +3,20 @@
   "main": "./animate.css",
   "ignore": [
     ".*",
-    "source",
     "*.yml",
     "Gemfile",
     "Gemfile.lock",
     "*.md"
   ],
   "homepage": "https://github.com/daneden/animate.css",
-  "version": "3.5.0",
-  "_release": "3.5.0",
+  "version": "3.7.0",
+  "_release": "3.7.0",
   "_resolution": {
     "type": "version",
-    "tag": "3.5.0",
-    "commit": "478b3aaf4b72fee2b036603e8aaa51a659ee7c73"
+    "tag": "3.7.0",
+    "commit": "940e4aef81edc26d3458480adcd475e51bd38df5"
   },
   "_source": "https://github.com/daneden/animate.css.git",
-  "_target": "3.5.0",
+  "_target": "3.7.0",
   "_originalSource": "animate.css"
 }
