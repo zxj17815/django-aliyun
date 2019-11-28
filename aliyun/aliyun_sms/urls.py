@@ -14,5 +14,10 @@ urlpatterns = [
     # path('<int:question_id>/results/', views.results, name='results'),
     # # ex: /index/5/vote/
     # path('<int:question_id>/vote/', views.vote, name='vote'),
-    path('',views.index,name='index'),
+    path('',views.index,name='index'), # 首页
+    path('send_sms/',views.send_sms,name='send_sms'), # 发送页面
+    path('send_callback/', views.send_callback.as_view(), name='send_callback'), # 发送接收回调
+    path('return_sms/',views.return_sms,name='return_sms'), # 回复页面
+    path('return_callback/', views.return_callback.as_view(), name='return_callback'), # 回复接收回调
+    
 ]

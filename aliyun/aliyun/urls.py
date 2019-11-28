@@ -18,5 +18,5 @@ from django.urls import path, re_path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('aliyun_sms.urls')),
+    path('sms/', include('aliyun_sms.urls')), # aliyun 短信应用
 ]
