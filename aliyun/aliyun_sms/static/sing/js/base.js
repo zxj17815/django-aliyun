@@ -340,7 +340,7 @@ $(function () {
         $('.widget').widgster();
         $('.selectpicker').selectpicker();
 
-        createCharts();
+        // createCharts();
         initCalendar();
         initTasks();
     }

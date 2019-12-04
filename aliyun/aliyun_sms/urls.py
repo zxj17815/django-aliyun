@@ -19,5 +19,5 @@ urlpatterns = [
     path('send_callback/', views.send_callback.as_view(), name='send_callback'), # 发送接收回调
     path('return_sms/',views.return_sms,name='return_sms'), # 回复页面
     path('return_callback/', views.return_callback.as_view(), name='return_callback'), # 回复接收回调
-    
+    path('download_sms_up/',views.download_sms_up,name='download_sms_up') # 导出SmsUp数据
 ]
